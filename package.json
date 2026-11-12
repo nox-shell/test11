@@ -1,0 +1,13 @@
+{
+  "name": "choithrams-short-expiry-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Short expiry tracker for supermarket products: imports the Excel product database, scans barcodes and tracks expiry against category and returnable rules.",
+  "scripts": {
+    "start": "python3 -m http.server 4321 --bind 127.0.0.1",
+    "test": "node test/tracker.mjs && node test/run.mjs"
+  },
+  "dependencies": {
+    "@zxing/library": "^0.21.3"
+  }
+}
